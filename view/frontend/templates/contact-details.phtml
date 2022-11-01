@@ -1,0 +1,14 @@
+<?php declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Yireo\ContactInformation\ViewModel\StoreDetails;
+
+/** @var Template $block */
+/** @var StoreDetails $storeDetails */
+$storeDetails = $block->getStoreDetails();
+?>
+<h2>Store details</h2>
+<ul>
+    <li>Store name: <?= $storeDetails->getStoreName() ?></li>
+    <li>Country: <?= $storeDetails->getCountry() ?></li>
+</ul>

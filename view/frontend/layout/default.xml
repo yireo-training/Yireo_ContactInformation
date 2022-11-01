@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:View/Layout:etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block template="Yireo_ContactInformation::contact-details.phtml">
+                <arguments>
+                    <argument name="store_details" xsi:type="object">Yireo\ContactInformation\ViewModel\StoreDetails</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
